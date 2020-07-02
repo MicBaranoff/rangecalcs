@@ -19,6 +19,7 @@ $(document).ready(function(){
         $( "#slider-range-min12" ).slider({
           range: "min",
           value: 1,
+          step: 0.10,
           min: 0,
           max: 10
         });
@@ -33,7 +34,7 @@ $(document).ready(function(){
             slide: function( event, ui ) {
                 if((ui.value + (ui.value * 0.2))< 50){
                   $( "#slider-range-min22" ).slider( "value", (ui.value + (ui.value * 0.3)) );
-                  $( ".count1" ).text( (ui.value + (ui.value * 0.2)) );
+                  $( ".count1" ).text( (ui.value + (ui.value * 0.3)) );
                 } else {
                     return false;
                 }
@@ -43,6 +44,7 @@ $(document).ready(function(){
           $( "#slider-range-min22" ).slider({
             range: "min",
             value: 10,
+            step: 0.10,
             min: 0,
             max: 50
           });

@@ -137,6 +137,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+#slider-range-min22,
+#slider-range-min12 {
+  pointer-events: none;
+}
 .calc {
   width: 100%;
   max-width: 450px;
